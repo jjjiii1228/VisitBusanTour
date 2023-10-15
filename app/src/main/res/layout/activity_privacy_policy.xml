@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".privacy_policy">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/white"
+        android:layout_marginTop="20dp">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Terms and conditions"
+            android:textColor="@color/black"
+            android:textSize="30dp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="5dp"
+            android:layout_marginTop="10dp"
+            android:background="#F4F4F4" />
+        <ScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="80dp"
+            android:fillViewport="true"
+            android:scrollbars="none">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="20dp"
+                android:text="Privacy Policy 1. \n
+All personal information handled by Korea Tour Pass complies with the Personal Infomration Protection Act and other relevant laws and regulations. Personal information is processed as follows and to protect users' personal information and rights and interests, and to effectively handle users' complaints related to personal information.
+\n\n
+Article 1 (Purpose of processing personal information)
+\n1. Korea Tour Pass processes only the minimum amount of personal information for the following purposes. The processed personal information shall not be used for purposes other than the purposes listed below. If any changes is to be made for the purpose of use, necessary measures such as acquiring consent will be taken.
+\n1) Identification (verificiation) of identity according to service use, real name authentication, membership registration, etc.
+\n2) Users' civil affairs
+\n3) Providing marketing services such as delivery of prizes and promotional materials and advertisements
+\n\n
+Article 2 (Processing and retaining period of personal information)
+\n1. Korea Tour Pass processes and retains personal information within the period of retention and use agreed upon when collecting personal information from the user.
+\n2. The personal information processing and retaining period operated by Korea Tour Pass is retained and used for up to 5 years for the purpose of Article 1.
+\n\n
+Article 3 (Provision of personal information to third parties)
+\n1. Korea Tour Pass provides personal information to a third party only with the consent of the information subject and in accordance with special provisions of the law.
+\n1) When separate consent is obtained from the information subject
+\n2) In case there are special regulations in the law or it is unavoidable to comply with legal obligations
+\n3) In the case where the data subject or his/her legal representative is unable to express his/her intention or obtain prior consent due to unknown address, etc., it is clearly necessary for the immediate interests of the information subject or third party if accepted
+\n4) If personal information is used for purposes other than the intended purpose or if it is not provided to a third party, it is impossible to carry out the duties prescribed by law and has undergone deliberation and resolution by the Protection Committee
+\n5) When it is necessary to provide information to foreign governments or international organizations for the implementation of treaties and other international agreements
+\n6) When it is necessary for criminal investigation and prosecution and maintenance
+\n7) When it is necessary for the court's trial work
+\n8) When it is necessary for the execution of punishment, probation, and protective disposition
+"/>
+
+        </ScrollView>
+
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center">
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:text="What kind of trip do you want?"
+            android:textColor="@color/black"
+            android:textSize="27dp"
+            android:textStyle="bold"
+            android:gravity="center"/>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Let me know all your tastes. Multiple choices are available!"
+        android:textSize="15dp"
+        android:textColor="@color/black"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <RadioGroup
+            android:id="@+id/schedule_group"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="110dp"
+                android:layout_height="match_parent"
+                android:text="Schedule"
+                android:textColor="@color/white"
+                android:background="@drawable/schedule_btn"
+                android:paddingTop="18dp"
+                android:paddingBottom="18dp"
+                android:paddingLeft="25dp"
+                android:paddingRight="25dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"/>
+
+            <RadioButton
+                android:id="@+id/diligently"
+                android:layout_width="123dp"
+                android:layout_height="match_parent"
+                android:button="@null"
+                android:textAlignment="center"
+                android:text="Diligently 🏃🏻"
+                android:background="@drawable/what_kind_btn"
+                android:layout_marginRight="13dp"/>
+
+            <RadioButton
+                android:id="@+id/leisurely"
+                android:layout_width="123dp"
+                android:layout_height="match_parent"
+                android:button="@null"
+                android:textAlignment="center"
+                android:textSize="12dp"
+                android:text="Leisurely 🚶🏻"
+                android:background="@drawable/what_kind_btn"
+                />
+
+        </RadioGroup>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <RadioGroup
+            android:id="@+id/activity_group"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="110dp"
+                android:layout_height="match_parent"
+                android:text="Activity"
+                android:textColor="@color/white"
+                android:background="@drawable/activity_btn"
+                android:paddingTop="18dp"
+                android:paddingBottom="18dp"
+                android:textAlignment="center"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"/>
+
+            <RadioButton
+                android:id="@+id/activity_trip_btn"
+                android:layout_width="123dp"
+                android:layout_height="match_parent"
+                android:button="@null"
+                android:textAlignment="center"
+                android:text="Activity trip 🏄🏻"
+                android:background="@drawable/what_kind_btn"
+                android:layout_marginRight="13dp"/>
+
+            <RadioButton
+                android:id="@+id/calm_trip_btn"
+                android:layout_width="123dp"
+                android:layout_height="match_parent"
+                android:button="@null"
+                android:textAlignment="center"
+                android:text="Calm trip 🧘🏻"
+                android:background="@drawable/what_kind_btn"
+                />
+        </RadioGroup>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <RadioGroup
+            android:id="@+id/attraction_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="110dp"
+                android:layout_height="match_parent"
+                android:text="Attraction"
+                android:textColor="@color/white"
+                android:background="@drawable/attraction_btn"
+                android:paddingTop="18dp"
+                android:paddingBottom="18dp"
+                android:textAlignment="center"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"/>
+
+            <RadioButton
+                android:checked="true"
+                android:id="@+id/famous_btn"
+                android:layout_width="123dp"
+                android:layout_height="match_parent"
+                android:button="@null"
+                android:textAlignment="center"
+                android:text="Famous 🗼"
+                android:background="@drawable/what_kind_btn"
+                android:layout_marginRight="13dp"/>
+
+            <RadioButton
+                android:id="@+id/less_btn"
+                android:layout_width="123dp"
+                android:layout_height="match_parent"
+                android:button="@null"
+                android:textAlignment="center"
+                android:text="Less famous ⛰"
+                android:background="@drawable/what_kind_btn"
+                />
+        </RadioGroup>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="The keyword of the trip is..."
+            android:textColor="@color/black"
+            android:textSize="24dp"
+            android:textStyle="bold" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp">
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="28dp"
+            android:text="K-pop"
+            android:textAllCaps="false"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="10dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:background="@drawable/normal_btn"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="28dp"
+            android:text="With Family"
+            android:textAllCaps="false"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:background="@drawable/normal_btn"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="28dp"
+            android:text="Traditional"
+            android:textAllCaps="false"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:background="@drawable/normal_btn"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp">
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="28dp"
+            android:text="With Friend"
+            android:textAllCaps="false"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="10dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:background="@drawable/normal_btn"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="28dp"
+            android:text="Instagramable"
+            android:textAllCaps="false"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:background="@drawable/normal_btn"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="28dp"
+            android:text="Ocean"
+            android:textAllCaps="false"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/normal_btn"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="50dp">
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/food_btn"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:text="next"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:id="@+id/next_btn"/>
+    </LinearLayout>
+</LinearLayout>
