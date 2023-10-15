@@ -6,133 +6,151 @@
     android:layout_height="match_parent"
     tools:context=".where">
 
-<!--    <FrameLayout-->
-<!--        android:layout_width="match_parent"-->
-<!--        android:layout_height="match_parent"-->
-<!--        android:layout_marginRight="20dp"-->
-<!--        android:layout_marginLeft="20dp"-->
-<!--        android:orientation="vertical">-->
-<!--        <TextView-->
-<!--            android:layout_width="match_parent"-->
-<!--            android:layout_height="wrap_content"-->
-<!--            android:layout_marginTop = "50dp"-->
-<!--            android:text="Where do you want to go?"-->
-<!--            android:textStyle="bold"-->
-<!--            android:textColor="@color/black"-->
-<!--            android:textSize="30dp"/>-->
-<!--        <TextView-->
-<!--            android:layout_width="match_parent"-->
-<!--            android:layout_height="wrap_content"-->
-<!--            android:layout_marginTop = "90dp"-->
-<!--            android:text="Select all the Busan areas you want to go to."-->
-<!--            android:textColor="@color/black"-->
-<!--            android:textSize="15dp"/>-->
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop = "50dp"
+            android:text="Where do you want to go?"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:textSize="30dp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop = "90dp"
+            android:text="Select all the Busan areas you want to go to."
+            android:textColor="@color/black"
+            android:textSize="15dp"/>
 
-<!--        <ImageView-->
-<!--            android:id="@+id/iv_busan"-->
-<!--            android:layout_width="match_parent"-->
-<!--            android:layout_height="wrap_content"-->
-<!--            android:layout_marginTop = "200dp"-->
-<!--            android:src="@drawable/ic_busan_busanjin_gu" />-->
+        <ImageView
+            android:id="@+id/iv_busan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop = "150dp"
+            android:src="@drawable/ic_busan_busanjin_gu" />
 
-<!--        <Button-->
-<!--            android:id="@+id/Gijiang"-->
-<!--            android:layout_width="wrap_content"-->
-<!--            android:layout_height="20dp"-->
-<!--            android:layout_marginTop = "350dp"-->
-<!--            android:layout_marginLeft = "270dp"-->
-<!--            android:text="Gijiang"-->
-<!--            android:textAllCaps="false"-->
-<!--            android:textStyle="10dp"-->
-<!--            android:background="@drawable/black_border"-->
-<!--            style="?android:attr/borderlessButtonStyle"/>-->
-<!--        <Button-->
-<!--            android:id="@+id/Dongnae"-->
-<!--            android:layout_width="wrap_content"-->
-<!--            android:layout_height="20dp"-->
-<!--            android:padding="0dp"-->
-<!--            android:layout_marginTop = "370dp"-->
-<!--            android:layout_marginLeft = "150dp"-->
-<!--            android:text="Dongnae"-->
-<!--            android:textAllCaps="false"-->
-<!--            android:textStyle="10dp"-->
-<!--            android:background="@drawable/black_border"-->
-<!--            style="?android:attr/borderlessButtonStyle"/>-->
-<!--        <Button-->
-<!--            android:id="@+id/Seonmyeon"-->
-<!--            android:layout_width="wrap_content"-->
-<!--            android:layout_height="20dp"-->
-<!--            android:padding="0dp"-->
-<!--            android:layout_marginTop = "450dp"-->
-<!--            android:layout_marginLeft = "120dp"-->
-<!--            android:text="Seonmyeon"-->
-<!--            android:textAllCaps="false"-->
-<!--            android:textStyle="10dp"-->
-<!--            android:background="@drawable/black_border"-->
-<!--            style="?android:attr/borderlessButtonStyle"/>-->
-<!--        <Button-->
-<!--            android:id="@+id/Gwangan"-->
-<!--            android:layout_width="wrap_content"-->
-<!--            android:layout_height="20dp"-->
-<!--            android:padding="0dp"-->
-<!--            android:layout_marginTop = "470dp"-->
-<!--            android:layout_marginLeft = "210dp"-->
-<!--            android:paddingLeft="10dp"-->
-<!--            android:text="Gwangan"-->
-<!--            android:textAllCaps="false"-->
-<!--            android:textStyle="10dp"-->
-<!--            android:background="@drawable/black_border"-->
-<!--            style="?android:attr/borderlessButtonStyle"/>-->
-<!--        <Button-->
-<!--            android:id="@+id/Haeundae"-->
-<!--            android:layout_width="wrap_content"-->
-<!--            android:layout_height="20dp"-->
-<!--            android:padding="0dp"-->
-<!--            android:layout_marginTop = "420dp"-->
-<!--            android:layout_marginLeft = "230dp"-->
-<!--            android:text="Haeundae"-->
-<!--            android:textAllCaps="false"-->
-<!--            android:background="@drawable/black_border"-->
-<!--            android:textStyle="10dp"-->
-<!--            style="?android:attr/borderlessButtonStyle"/>-->
-<!--        <Button-->
-<!--            android:id="@+id/Yeongdo"-->
-<!--            android:layout_width="wrap_content"-->
-<!--            android:layout_height="20dp"-->
-<!--            android:padding="0dp"-->
-<!--            android:layout_marginTop = "520dp"-->
-<!--            android:layout_marginLeft = "160dp"-->
-<!--            android:text="Yeongdo"-->
-<!--            android:textAllCaps="false"-->
-<!--            android:textStyle="10dp"-->
-<!--            android:background="@drawable/black_border"/>-->
-<!--        <Button-->
-<!--            android:id="@+id/Sasang"-->
-<!--            android:layout_width="wrap_content"-->
-<!--            android:layout_height="20dp"-->
-<!--            android:padding="0dp"-->
-<!--            android:layout_marginTop = "460dp"-->
-<!--            android:layout_marginLeft = "10dp"-->
-<!--            android:text="Sasang/Gangseo"-->
-<!--            android:textAllCaps="false"-->
-<!--            android:textColor="@color/black"-->
-<!--            android:background="@drawable/black_border"-->
-<!--            android:textStyle="10dp"-->
-<!--            style="?android:attr/borderlessButtonStyle"/>-->
-<!--        <Button-->
-<!--            android:id="@+id/next_btn"-->
-<!--            android:layout_width="match_parent"-->
-<!--            android:layout_height="wrap_content"-->
-<!--            android:background="@drawable/food_btn"-->
-<!--            android:text="Make a course"-->
-<!--            android:textColor="@color/white"-->
-<!--            android:textStyle="bold"-->
-<!--            android:textAllCaps="false"-->
-<!--            android:textSize="17"-->
-<!--            android:layout_marginTop="650dp" />-->
+        <Button
+            android:id="@+id/Gijiang"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:layout_marginLeft="270dp"
+            android:layout_marginTop="320dp"
+            android:background="@drawable/black_border"
+            android:text="Gijiang"
+            android:textAllCaps="false"
+            android:textSize="8dp"
+            android:minHeight="0dp"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <Button
+            android:id="@+id/Dongnae"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:layout_marginLeft="150dp"
+            android:layout_marginTop="340dp"
+            android:background="@drawable/black_border"
+            android:padding="0dp"
+            android:minHeight="0dp"
+            android:text="Dongnae"
+            android:textAllCaps="false"
+            android:textSize="8dp"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <Button
+            android:id="@+id/Seonmyeon"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:layout_marginLeft="120dp"
+            android:layout_marginTop="420dp"
+            android:minHeight="0dp"
+            android:background="@drawable/black_border"
+            android:padding="0dp"
+            android:text="Seonmyeon"
+            android:textAllCaps="false"
+            android:textSize="8dp"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <Button
+            android:id="@+id/Gwangan"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:minHeight="0dp"
+            android:layout_marginLeft="210dp"
+            android:layout_marginTop="440dp"
+            android:background="@drawable/black_border"
+            android:padding="0dp"
+            android:paddingLeft="10dp"
+            android:text="Gwangan"
+            android:textAllCaps="false"
+            android:textSize="8dp"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <Button
+            android:id="@+id/Haeundae"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:layout_marginLeft="230dp"
+            android:layout_marginTop="390dp"
+            android:background="@drawable/black_border"
+            android:padding="0dp"
+            android:text="Haeundae"
+            android:minHeight="0dp"
+            android:textAllCaps="false"
+            android:textSize="8dp"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <Button
+            android:id="@+id/Yeongdo"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:layout_marginLeft="160dp"
+            android:layout_marginTop="490dp"
+            android:background="@drawable/black_border"
+            android:padding="0dp"
+            android:text="Yeongdo"
+            android:textAllCaps="false"
+            android:textSize="8dp"
+            android:minHeight="0dp"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <Button
+            android:id="@+id/Sasang"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="430dp"
+            android:background="@drawable/black_border"
+            android:text="Sasang/Gangseo"
+            android:textAllCaps="false"
+            android:textColor="@color/black"
+            android:textSize="8dp"
+            android:minHeight="0dp"
+            tools:ignore="TouchTargetSizeCheck" />
+        <Button
+            android:id="@+id/next_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/food_btn"
+            android:text="Make a course"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:textAllCaps="false"
+            android:layout_marginTop="600dp" />
 
 
-<!--    </FrameLayout>-->
+    </FrameLayout>
 
 
 

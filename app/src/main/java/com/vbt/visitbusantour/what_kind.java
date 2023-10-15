@@ -18,7 +18,7 @@ public class what_kind extends AppCompatActivity {
         Next_btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(getApplicationContext(),what_kind.class);
+                Intent intent = new Intent(getApplicationContext(),where.class);
                 startActivity(intent);
             }
         });
