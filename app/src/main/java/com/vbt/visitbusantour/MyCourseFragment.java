@@ -15,6 +15,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 
+import com.vbt.visitbusantour.activity.CourseDetailActivity;
 import com.vbt.visitbusantour.data.DataDTO;
 
 import org.json.JSONObject;
@@ -29,7 +30,8 @@ public class MyCourseFragment extends Fragment {
     // Load Course data
     RecyclerView rv_recycle;
     RecyclerView.LayoutManager layoutManager;
-    RecyclerView.Adapter adapter;
+
+    CourseRecyclerAdapter mCourseRecyclerViewAdapter;
 
     DataDTO dto;
     ArrayList<DataDTO> data = new ArrayList<>();
@@ -69,9 +71,27 @@ public class MyCourseFragment extends Fragment {
         layoutManager = new LinearLayoutManager(getActivity());
         rv_recycle.setLayoutManager(layoutManager);
 
-        adapter = new CourseRecyclerAdapter(getActivity(), data);
-        rv_recycle.setAdapter(adapter);
+        mCourseRecyclerViewAdapter = new CourseRecyclerAdapter(getActivity(), data);
+        rv_recycle.setAdapter(mCourseRecyclerViewAdapter);
 
+        mCourseRecyclerViewAdapter.setOnItemClickListener(new CourseRecyclerAdapter.OnItemClickListener() {
+            @Override
+            public void onItemClick(int position) {
+
+                DataDTO clickedData = data.get(position);
+
+                Intent intent = new Intent(getActivity(), CourseDetailActivity.class);
+
+                // 데이터를 전달하기 위해 Intent에 추가
+                intent.putExtra("start_date", clickedData.getStart_date());
+                intent.putExtra("end_date", clickedData.getEnd_date());
+                intent.putExtra("departure", clickedData.getDeparture());
+                intent.putExtra("destination", clickedData.getDestination());
+                intent.putExtra("total_people_cnt", clickedData.getTotal_people_cnt());
+
+                startActivity(intent);
+            }
+        });
         return view;
     }
 
