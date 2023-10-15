@@ -10,9 +10,12 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.bumptech.glide.Glide;
+
 import java.util.ArrayList;
 
 public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapter.ViewHolder> {
+
     public class ViewHolder extends RecyclerView.ViewHolder {
         ImageView imgView_item;
         TextView txt_main;
@@ -41,16 +44,40 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
         return vh;
     }
 
+    private OnItemClickListener mListener;
+
+    public void setOnItemClickListener(OnItemClickListener listener) {
+        mListener = listener;
+    }
+
     @Override
     public void onBindViewHolder(@NonNull RecyclerViewAdapter.ViewHolder holder, int position) {
         RecyclerViewItem item = mList.get(position);
+        final int currentPosition = position;
 
-        holder.imgView_item.setImageResource(R.drawable.ic_launcher_background);
+        Glide.with(holder.itemView.getContext())
+                .load(item.getImgName())
+                .into(holder.imgView_item);
+
         holder.txt_main.setText(item.getMainText());
+
+        holder.itemView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                if (mListener != null) {
+                    mListener.onItemClick(currentPosition);
+                }
+            }
+        });
     }
 
     @Override
     public int getItemCount() {
         return mList.size();
     }
+
+    public interface OnItemClickListener {
+        void onItemClick(int position);
+    }
 }
+

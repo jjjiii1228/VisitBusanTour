@@ -1,0 +1,93 @@
+{
+    "data": {
+        "start_date": "2023-01-01",
+        "end_date": "2023-01-03",
+        "departure": "Gwangan",
+        "destination": "Haeundae",
+        "total_people_cnt": 3,
+        "course_detail": [
+            {
+                "date": "2023-01-01",
+                "location": [
+                    {
+                        "location_name": "청사포다릿돌전망대",
+                        "location_url": "https://maps.app.goo.gl/rSELDxwxMyysZ8cL7",
+                        "location_address": "부산광역시 해운대구 중동 산 3-9",
+                        "location_longitude": "129.196262235317",
+                        "location_latitude": "35.1641953523606",
+                        "location_score": 4.3,
+                        "location_type": "OBSERVATORY"
+                    },
+                    {
+                        "location_name": "해운대해변열차",
+                        "location_url": "https://maps.app.goo.gl/BkZSVmETzetnR4ck9",
+                        "location_address": "부산광역시 해운대구 달맞이길 62번길 13",
+                        "location_longitude": "129.172823012165",
+                        "location_latitude": "35.1581583978196",
+                        "location_score": 4.3,
+                        "location_type": "ACTIVITY"
+                    },
+                    {
+                        "location_name": "해운대해수욕장‧송림공원",
+                        "location_url": "https://maps.app.goo.gl/pEf5ZEkHaMk5Rrw17",
+                        "location_address": "부산광역시 해운대구 해운대해변로 266",
+                        "location_longitude": "129.161015391536",
+                        "location_latitude": "35.1591996329783",
+                        "location_score": 4.5,
+                        "location_type": "BEACH"
+                    },
+                    {
+                        "location_name": "부산아쿠아리움",
+                        "location_url": "https://maps.app.goo.gl/hZW5G9cUzoTmysTR6",
+                        "location_address": "부산광역시 영도구 전망로 24",
+                        "location_longitude": "129.079805736256",
+                        "location_latitude": "35.0596949578329",
+                        "location_score": 4.2,
+                        "location_type": "AQUARIUM"
+                    }
+                ]
+            },
+            {
+                "date": "2023-01-02",
+                "location": [
+                    {
+                        "location_name": "청사포다릿돌전망대",
+                        "location_url": "https://maps.app.goo.gl/rSELDxwxMyysZ8cL7",
+                        "location_address": "부산광역시 해운대구 중동 산 3-9",
+                        "location_longitude": "129.196262235317",
+                        "location_latitude": "35.1641953523606",
+                        "location_score": 4.3,
+                        "location_type": "OBSERVATORY"
+                    },
+                    {
+                        "location_name": "해운대해변열차",
+                        "location_url": "https://maps.app.goo.gl/BkZSVmETzetnR4ck9",
+                        "location_address": "부산광역시 해운대구 달맞이길 62번길 13",
+                        "location_longitude": "129.172823012165",
+                        "location_latitude": "35.1581583978196",
+                        "location_score": 4.3,
+                        "location_type": "ACTIVITY"
+                    },
+                    {
+                        "location_name": "해운대해수욕장‧송림공원",
+                        "location_url": "https://maps.app.goo.gl/pEf5ZEkHaMk5Rrw17",
+                        "location_address": "부산광역시 해운대구 해운대해변로 266",
+                        "location_longitude": "129.161015391536",
+                        "location_latitude": "35.1591996329783",
+                        "location_score": 4.5,
+                        "location_type": "BEACH"
+                    },
+                    {
+                        "location_name": "부산아쿠아리움",
+                        "location_url": "https://maps.app.goo.gl/hZW5G9cUzoTmysTR6",
+                        "location_address": "부산광역시 영도구 전망로 24",
+                        "location_longitude": "129.079805736256",
+                        "location_latitude": "35.0596949578329",
+                        "location_score": 4.2,
+                        "location_type": "AQUARIUM"
+                    }
+                ]
+            }
+        ]
+    }
+}

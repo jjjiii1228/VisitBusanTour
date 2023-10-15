@@ -10,9 +10,12 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.bumptech.glide.Glide;
+
 import java.util.ArrayList;
 
 public class RecyclerViewAdapter2 extends RecyclerView.Adapter<RecyclerViewAdapter2.ViewHolder>{
+
     public class ViewHolder extends RecyclerView.ViewHolder {
         ImageView imgView_item2;
         TextView txt_main2;
@@ -41,16 +44,38 @@ public class RecyclerViewAdapter2 extends RecyclerView.Adapter<RecyclerViewAdapt
         return vh;
     }
 
+    private OnItemClickListener mListener;
+
+    public void setOnItemClickListener(OnItemClickListener listener) { mListener = listener;}
+
     @Override
     public void onBindViewHolder(@NonNull RecyclerViewAdapter2.ViewHolder holder, int position) {
         RecyclerViewItem2 item = mList.get(position);
+        final int currentPosition = position;
 
-        holder.imgView_item2.setImageResource(R.drawable.ic_launcher_background);
-        holder.txt_main2.setText(item.getMainText());
+        Glide.with(holder.itemView.getContext())
+                .load(item.getImgName())
+                .into(holder.imgView_item2);
+
+        holder.txt_main2.setText(item.getPlace());
+
+        holder.itemView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                if (mListener != null) {
+                    mListener.onItemClick(currentPosition);
+                }
+            }
+        });
     }
 
     @Override
     public int getItemCount() {
         return mList.size();
     }
+
+    public interface OnItemClickListener {
+        void onItemClick(int position);
+    }
 }
+

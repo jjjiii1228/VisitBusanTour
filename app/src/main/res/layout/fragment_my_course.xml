@@ -1,37 +1,32 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/white"
+    android:orientation="vertical"
     tools:context=".MyCourseFragment">
 
     <!-- TODO: Update blank fragment layout -->
-
-    <LinearLayout
+    <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:layout_marginLeft="20dp"
-        android:layout_marginRight="20dp"
-        android:layout_marginTop = "10dp">
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="My Course"
-            android:textStyle="bold"
-            android:textColor="@color/black"
-            android:textSize="30dp"/>
-        <Button
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_margin="30dp"
-            android:elevation="20dp"
-            android:text="+"
-            android:background="@drawable/border"
-            android:id="@+id/make_course_btn"
-            />
-    </LinearLayout>
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:layout_marginBottom="20dp"
+        android:text="My Course" />
 
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/course_recycler"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
 
-</FrameLayout>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:elevation="20dp"
+        android:text="+"
+        android:id="@+id/make_course_btn" />
+
+</LinearLayout>
