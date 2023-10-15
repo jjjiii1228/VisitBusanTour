@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".terms_detail">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/white"
+        android:layout_marginTop="20dp">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Terms and conditions"
+            android:textColor="@color/black"
+            android:textSize="30dp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="5dp"
+            android:layout_marginTop="10dp"
+            android:background="#F4F4F4" />
+        <ScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="80dp"
+            android:fillViewport="true"
+            android:scrollbars="none">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="20dp"
+                android:text="Article 1 Purpose
+                \n\n
+
+These terms of use (Terms) shall specify the rights, obligations and responsibilities between the user and the Korea Tour Pass (Company) in relation to the use of the Busan Tour Pass (Pass) issued by the Company as well as basic matters, such as the methods and procedures for using the Pass.
+\n\n
+Article 2 Terminology
+\n\n
+
+Terminology for these Terms shall be as follows.
+\n
+1. Company refers to a virtual business place that has been commissioned by the Busan Tourism Organization to provide goods and services (hereinafter referred to as “goods, etc.”) to users so that goods and services can be traded using information and communication facilities such as computers. It is also used in the sense of a business operator operating an Internet site.
+\n2. Pass refers to both a Card Pass and a Mobile Pass that provides users with free or discounted benefits at attractions in partnership with the Company.
+\n3. User refers to both members and non-members as tourists who agree to these Terms for the Pass, and purchase and use the Pass in a legitimate way.
+\n4. Member refers to a person who is registered as a member on the official website and mobile app of the Pass.
+\n5. Affiliated facilities refers to cultural, tourism, shopping and other tourism-related facilities that entered into a partnership agreement with the Company.
+\n6. Use time refers to the time during which the user is allowed to visit tourist attractions with the Pass. The use time is calculated from the moment when the first tourist attraction is visited in counts of 24 hours and 48 hours
+\n7. The number of times of use refers to the number of times a user visits a tourist attraction with a pass. Passes that restrict the number of visits to paid facilities are divided into 3 and 5 times passes.
+\n8. Valid period refers to the period during which the user is allowed to enter attractions after purchasing the Pass, and it includes the extinctive prescription for commercial claims. The exact duration of the valid period can be checked via the official website.
+\n\n
+Article 3 Efficacy and Changes
+\n\n
+1. These Terms shall apply to all users who wish to use the Pass. However, in the case of the Pass purchased from affiliated official distributors other than the official website or mobile app of the Pass (Official Website, Etc.) or offline distributors designated by the Company, the terms and conditions of the applicable distributors shall be applied.
+\n2. The Company may change these Terms within the scope of not violating related laws. If the Company changes the Terms, the effective date and the reason for the change shall be specified and notified via channels, such as the official website, ten (10) days prior to the applicable effective date. However, if the Terms are changed unfavorably to the user, the changes shall be indicated in an easy-to-understand manner for the user and notified thirty (30) days before the effective date."/>
+        </ScrollView>
+
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

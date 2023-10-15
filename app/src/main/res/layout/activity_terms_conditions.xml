@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Terms_conditions">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/white"
+        android:layout_marginTop="20dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Terms and conditions"
+            android:textColor="@color/black"
+            android:textSize="30dp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="5dp"
+            android:layout_marginTop="10dp"
+            android:background="#F4F4F4" />
+
+        <Button
+            style="?android:attr/borderlessButtonStyle"
+            android:id="@+id/terms_detail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="60dp"
+            android:background="@color/white"
+            android:gravity="left|center"
+            android:paddingLeft="20dp"
+            android:text="Terms and conditions"
+            android:textAllCaps="false"
+            android:textSize="18dp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="5dp"
+            android:background="#F4F4F4" />
+        <Button
+            style="?android:attr/borderlessButtonStyle"
+            android:id="@+id/privacy_policy"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:gravity="left|center"
+            android:paddingLeft="20dp"
+            android:text="Privacy Policy"
+            android:textAllCaps="false"
+            android:textSize="18dp" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="5dp"
+            android:background="#F4F4F4" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

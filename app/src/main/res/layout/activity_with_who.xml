@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Who are you going on this trip with?"
+            android:layout_marginTop="30dp"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:textColor="@color/black"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="I'll recommend a course for a trip that suits your companion."
+            android:textSize="15dp"
+            android:textColor="@color/black"
+            android:layout_marginTop="5dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="15dp">
+
+        <Button
+            android:id="@+id/infant"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Infant"
+            android:textAllCaps="false"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/normal_btn" />
+
+        <Button
+            android:id="@+id/child"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Child"
+            android:textAllCaps="false"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/normal_btn" />
+        <Button
+            android:id="@+id/teenager"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginLeft="10dp"
+            android:text="10s"
+            android:textAllCaps="false"
+            android:background="@drawable/normal_btn" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="15dp">
+
+        <Button
+            android:id="@+id/twenties"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="20s"
+            android:textAllCaps="false"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/normal_btn" />
+
+        <Button
+            android:id="@+id/thirties"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="30s"
+            android:textAllCaps="false"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/normal_btn" />
+        <Button
+            android:id="@+id/forties"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginLeft="10dp"
+            android:text="40s"
+            android:textAllCaps="false"
+            android:background="@drawable/normal_btn" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        android:layout_marginTop="0dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="15dp">
+
+        <Button
+            android:id="@+id/fifties"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="50s"
+            android:textAllCaps="false"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/normal_btn"/>
+
+
+        <Button
+            android:id="@+id/sixties"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="60s"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:textAllCaps="false"
+            android:background="@drawable/normal_btn" />
+        <Button
+            android:id="@+id/seven"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginLeft="10dp"
+            android:text="70s or older"
+            android:textAllCaps="false"
+            android:background="@drawable/normal_btn" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="15dp">
+
+        <TextView
+            android:layout_width="95dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textStyle="bold"
+            android:text="Disabled" />
+
+        <RadioButton
+            android:id="@+id/disable"
+            android:layout_width="94dp"
+            android:layout_height="43dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/what_kind_btn"
+            android:button="@null"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:text="Yes"
+            android:textAlignment="center"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <RadioButton
+            android:id="@+id/disable_not"
+            android:layout_width="94dp"
+            android:layout_height="43dp"
+            android:background="@drawable/what_kind_btn"
+            android:button="@null"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:text="No"
+            android:textAlignment="center"
+            tools:ignore="TouchTargetSizeCheck" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="15dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="left|center"
+            android:text="Total"
+            android:textColor="@color/black"
+            android:layout_weight="1"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="135dp"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:background="@drawable/normal_btn">
+
+            <Button
+                android:id="@+id/minus"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@drawable/no_border_btn"
+                android:text="-"
+                android:textStyle="bold"
+                android:textAllCaps="false"
+                android:gravity="center"
+                style="?android:attr/borderlessButtonStyle"
+                android:textColor="@color/black"
+                tools:ignore="TouchTargetSizeCheck" />
+            <TextView
+                android:layout_width="30dp"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="0"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/plus"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@drawable/no_border_btn"
+                android:text="+"
+                style="?android:attr/borderlessButtonStyle"
+                android:gravity="center"
+                android:textAllCaps="false"
+                android:textColor="@color/black"
+                tools:ignore="TouchTargetSizeCheck" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="60dp"
+            android:background="@drawable/food_btn"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:text="next"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:id="@+id/next_btn"/>
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".VisitBusanFragment">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Visit Busan"
+            android:textSize="30dp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Visit Busan Pass Benefits"
+            android:id="@+id/visitBusan_txt"
+            android:bufferType="spannable"
+            android:layout_gravity="center"
+            android:textSize="30dp"
+            android:textStyle="bold"
+            android:layout_marginTop="20dp"/>
+
+        <ScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="80dp"
+            android:fillViewport="true"
+            android:scrollbars="none">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:background="@drawable/normal_btn">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="20dp"
+                        android:text="Free 30+"
+                        android:textColor="#5FBBEC"
+                        android:textSize="25dp"
+                        android:textStyle="bold" />
+
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="20dp"
+                        android:background="@drawable/normal_btn"
+                        android:drawableLeft="@drawable/x_the_sky"
+                        android:drawablePadding="0dp"
+                        android:id="@+id/x_the_sky"
+                        android:text="Busan X the Sky" />
+
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="20dp"
+                        android:background="@drawable/normal_btn"
+                        android:drawableLeft="@drawable/lotte_world"
+                        android:id="@+id/lotte_world"
+                        android:text="Busan X the Sky" />
+
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="20dp"
+                        android:background="@drawable/normal_btn"
+                        android:drawableLeft="@drawable/children_museum"
+                        android:id="@+id/children_museum"
+                        android:text="Busan X the Sky" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:background="@drawable/normal_btn"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="20dp"
+                        android:text="Discounted 120+"
+                        android:textColor="#D0B8E3"
+                        android:textSize="25dp"
+                        android:textStyle="bold" />
+
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="20dp"
+                        android:background="@drawable/normal_btn"
+                        android:drawableLeft="@drawable/yacht"
+                        android:id="@+id/yacht"
+                        android:text="Busan X the Sky" />
+
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="20dp"
+                        android:background="@drawable/normal_btn"
+                        android:drawableLeft="@drawable/avani"
+                        android:id="@+id/avani"
+                        android:text="Busan X the Sky" />
+
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="20dp"
+                        android:background="@drawable/normal_btn"
+                        android:drawableLeft="@drawable/mulbitsaek"
+                        android:id="@+id/mulbitsaek"
+                        android:text="Busan X the Sky" />
+                </LinearLayout>
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:text="More info about VBP benefits"
+                    android:textColor="@color/white"
+                    android:textSize="17dp"
+                    android:layout_marginTop="30dp"
+                    android:id="@+id/more_info"
+                    android:background="@drawable/more_info"
+                    />
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+</FrameLayout>
