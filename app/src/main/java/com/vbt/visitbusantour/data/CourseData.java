@@ -2,6 +2,9 @@ package com.vbt.visitbusantour.data;
 
 import com.google.gson.annotations.SerializedName;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class CourseData {
     @SerializedName("authentication_code")
     String code;
@@ -25,7 +28,7 @@ public class CourseData {
                       String attraction, String keyword) {
 
         this.userEmail = userEmail;
-        this.companion = companion;
+        this.companion = createCourseDetailList(companion);
         this.schedule = schedule;
         this.activity = activity;
         this.attraction = attraction;
@@ -36,7 +39,7 @@ public class CourseData {
         List<CourseDetailData> detailDataList = new ArrayList();
 
         for (int i = 0; i < data.size(); i++) {
-            detailDataList.add(new CourseDetailData(data[i]));
+            detailDataList.add(new CourseDetailData(data.get(i)));
         }
 
         return detailDataList;
