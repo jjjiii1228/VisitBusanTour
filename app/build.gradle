@@ -15,7 +15,7 @@ android {
         applicationId "com.vbt.google_login"
         minSdk 21
         targetSdk 33
-        versionCode 5
+        versionCode 6
         versionName "0.00.01"
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
@@ -25,7 +25,7 @@ android {
         applicationId "com.vbt.visitbusantour"
         minSdk 22
         targetSdk 33
-        versionCode 5
+        versionCode 6
         versionName "0.00.01"
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
@@ -50,6 +50,9 @@ dependencies {
     implementation 'com.squareup.retrofit2:retrofit:2.5.0'
     implementation 'com.google.code.gson:gson:2.8.2'
     implementation 'com.squareup.retrofit2:converter-gson:2.4.0'
+
+    implementation 'com.google.code.gson:gson:2.8.2'
+    implementation 'com.squareup.retrofit2:converter-gson:2.9.0'
 
     implementation 'androidx.appcompat:appcompat:1.4.2'
     implementation 'com.google.android.material:material:1.6.0'

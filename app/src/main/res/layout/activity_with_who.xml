@@ -46,10 +46,9 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:text="Infant"
-            android:onClick="@drawabel/back_blue_btn"
+            android:background="@drawable/with_who_btn"
             android:textAllCaps="false"
-            android:layout_marginRight="10dp"
-            android:background="@drawable/with_who_btn" />
+            android:layout_marginRight="10dp"/>
 
         <Button
             android:id="@+id/child"
@@ -238,7 +237,7 @@
                 android:layout_height="match_parent"
                 android:gravity="center"
                 android:text="0"
-                android:id="@+id/count"
+                android:id="@+id/member"
                 android:textStyle="bold" />
 
             <Button

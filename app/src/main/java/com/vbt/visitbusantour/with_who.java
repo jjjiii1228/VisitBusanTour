@@ -4,13 +4,17 @@ import androidx.annotation.DrawableRes;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.graphics.Color;
+import android.graphics.drawable.GradientDrawable;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.MotionEvent;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
+
+import org.w3c.dom.Text;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -30,9 +34,10 @@ public class with_who extends AppCompatActivity {
     private Button Disable_not;
     private Button Plus;
     private Button Minus;
-    private TextView Count;
     private ArrayList TRAVELIGN_COMPANION_STYLE = new ArrayList<String>();
     private String DISABILITY_STATUS = "NONE"; // NONE/YES/NO
+    private TextView Member ;
+    private int Count=0;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -52,16 +57,21 @@ public class with_who extends AppCompatActivity {
         Disable_not = (Button) findViewById(R.id.disable_not);
         Plus = (Button) findViewById(R.id.plus);
         Minus = (Button) findViewById(R.id.minus);
+        Member = (TextView) findViewById(R.id.member);
+
 
 
 
         Infant.setOnClickListener(new View.OnClickListener() {
             private int count=0;
+
             @Override
             public void onClick(View view) {
                 count ++;
                 if(count%2 == 1){
                     TRAVELIGN_COMPANION_STYLE.add("Infant");
+                    Infant.setSelected(true);
+
                 }else{
                     TRAVELIGN_COMPANION_STYLE.remove("Infant");
                 }
@@ -166,6 +176,24 @@ public class with_who extends AppCompatActivity {
         });
         Log.d("companion", String.format("%d",TRAVELIGN_COMPANION_STYLE.size()));
 
+        Plus.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Count ++;
+                Member.setText(String.valueOf(Count));
+
+            }
+        });
+        Minus.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Count --;
+                if (Count < 0){
+                    Count = 0; }
+                Member.setText(String.valueOf(Count));
+            }
+        });
+
 
         Disable.setOnClickListener(new View.OnClickListener() {
             private int count=0;
@@ -194,17 +222,21 @@ public class with_who extends AppCompatActivity {
             }
         });
 
-
-
-
-
-
         Button Next_btn = findViewById(R.id.next_btn);
         Next_btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+
+                SharedPreferences sharedPreferences = getSharedPreferences("info",MODE_PRIVATE);
+                SharedPreferences.Editor editor= sharedPreferences.edit(); //sharedPreferences
+                editor.putString("disability", DISABILITY_STATUS);
+                editor.putInt("total_people_cnt", Count);
+                editor.commit();
+
+
                 Intent intent = new Intent(getApplicationContext(),what_kind.class);
                 startActivity(intent);
+
             }
         });
     }
@@ -215,21 +247,16 @@ public class with_who extends AppCompatActivity {
                 DISABILITY_STATUS = value;
 
                 if (DISABILITY_STATUS == "Yes") {
-                    Disable_not.setEnabled(false);
-                } else
-                {
-                    Disable.setEnabled(false);
-                }
+                    Disable_not.setEnabled(false); }
+                else { Disable.setEnabled(false); }
             }
         }else {
             if (DISABILITY_STATUS == value && clickedCount == 0) {
                 DISABILITY_STATUS = "NONE";
-
                 Disable.setEnabled(true);
                 Disable_not.setEnabled(true);
             }
-        }
-
-        Log.d("Button status: ", DISABILITY_STATUS);
+        }Log.d("Button status: ", DISABILITY_STATUS);
     }
 }
+

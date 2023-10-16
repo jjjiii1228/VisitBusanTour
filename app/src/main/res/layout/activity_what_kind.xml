@@ -104,7 +104,7 @@
 
             <RadioButton
                 android:id="@+id/activity_trip_btn"
-                android:layout_width="123dp"
+                android:layout_width="78dp"
                 android:layout_height="match_parent"
                 android:button="@null"
                 android:textAlignment="center"
@@ -114,11 +114,21 @@
 
             <RadioButton
                 android:id="@+id/calm_trip_btn"
-                android:layout_width="123dp"
+                android:layout_width="78dp"
                 android:layout_height="match_parent"
                 android:button="@null"
                 android:textAlignment="center"
                 android:text="Calm trip 🧘🏻"
+                android:layout_marginRight="13dp"
+                android:background="@drawable/what_kind_btn"/>
+
+            <RadioButton
+                android:id="@+id/walking_btn"
+                android:layout_width="78dp"
+                android:layout_height="match_parent"
+                android:button="@null"
+                android:textAlignment="center"
+                android:text="Walking trip 🧘🏻"
                 android:background="@drawable/what_kind_btn"
                 />
         </RadioGroup>
@@ -129,7 +139,7 @@
         android:layout_height="wrap_content"
         android:orientation="vertical">
         <RadioGroup
-            android:id="@+id/attraction_btn"
+            android:id="@+id/attraction_group"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="15dp"
@@ -190,6 +200,7 @@
             android:layout_width="wrap_content"
             android:layout_height="28dp"
             android:text="K-pop"
+            android:id="@+id/k_pop"
             android:textAllCaps="false"
             android:layout_marginLeft="20dp"
             android:layout_marginRight="10dp"
@@ -197,6 +208,7 @@
             android:paddingRight="10dp"
             android:background="@drawable/normal_btn"/>
         <Button
+            android:id="@+id/family"
             android:layout_width="wrap_content"
             android:layout_height="28dp"
             android:text="With Family"
@@ -207,6 +219,7 @@
             android:paddingRight="20dp"
             android:background="@drawable/normal_btn"/>
         <Button
+            android:id="@+id/traditional"
             android:layout_width="wrap_content"
             android:layout_height="28dp"
             android:text="Traditional"
@@ -222,6 +235,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="5dp">
         <Button
+            android:id="@+id/friend"
             android:layout_width="wrap_content"
             android:layout_height="28dp"
             android:text="With Friend"
@@ -232,6 +246,7 @@
             android:paddingRight="20dp"
             android:background="@drawable/normal_btn"/>
         <Button
+            android:id="@+id/insta"
             android:layout_width="wrap_content"
             android:layout_height="28dp"
             android:text="Instagramable"
@@ -242,6 +257,7 @@
             android:paddingRight="20dp"
             android:background="@drawable/normal_btn"/>
         <Button
+            android:id="@+id/ocean"
             android:layout_width="wrap_content"
             android:layout_height="28dp"
             android:text="Ocean"
